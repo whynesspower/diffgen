@@ -1,0 +1,30 @@
+{
+  "name": "diffgen-cli",
+  "version": "1.0.0",
+  "description": "Interactive CLI to generate changelogs via Azure OpenAI and serve with docsify",
+  "main": "index.js",
+  "bin": {
+    "diffgen": "bin/diffgen.js"
+  },
+  "scripts": {
+    "start": "node bin/diffgen.js",
+    "dev": "node bin/diffgen.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "changelog",
+    "cli",
+    "git",
+    "docsify",
+    "azure-openai"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chrono-node": "^2.8.4",
+    "docsify-cli": "^4.4.4",
+    "inquirer": "^8.2.6",
+    "node-fetch": "^3.3.2",
+    "simple-git": "^3.28.0"
+  }
+}
