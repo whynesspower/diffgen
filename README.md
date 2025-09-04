@@ -119,3 +119,4 @@ npm unlink -g diffgen-cli
 1. Commit messages, I know they are bad and the updates were directly made on main branch (some README updates were made from mobile phone)
 2. Not much time was spent on code refactoring, the script logic can be optimized by a lot
 3. The whole solution was optimzed for speed of delivery and UX, ease of usage.
+4. Base prompt: Didn't get much time to experiment with this, hende results can be subpar. This will be improved once I recover (Monday, 8th Sept)
