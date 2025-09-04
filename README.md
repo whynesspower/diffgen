@@ -1,6 +1,24 @@
 # Diffgen CLI
-
 Interactive CLI that generates a clean, Markdown changelog from your Git history using OpenAI, then serves it beautifully with Docsify on port 3000.
+
+# Evaluration
+
+• Does it work? 
+
+Yess, find the demo video here: https://drive.google.com/file/d/1eq-YNG4Od5FDuvDftevtxvWLOX2tKQaV/view?usp=sharing
+
+• Is there evidence of user-centered product design choices?
+
+Earlier I thought to use an optimized Next JS build for both frotnend and backend, reading the problem statement again from the lense of the end user realised that I'm buidling for developers: some of which prefer even ordering coffee from the CLI. 
+
+Generation of the change log should be the easiest thing - just a command away. The same cammand also starts a server to serve docsify to display the change log. 
+
+• Is it pretty (simple and minimal can be beautiful)?
+Didn't revent the wheel for frontend. Used the most standard open source solution to ease my own work. 
+
+• How is the UX from the developer's perspective? How easy is it now for them to write a changelog
+
+Addressed above
 
 ## Features
 - **Interactive prompts** to choose one of:
@@ -11,25 +29,12 @@ Interactive CLI that generates a clean, Markdown changelog from your Git history
 - Saves output to `CHANGELOG.generated.md` at the repo root
 - **Docsify** site auto-generated and served at `http://localhost:3000`
 
-## Quick start on a new macOS machine
 ### Warning! Before running the code, please see the endpoint link in the diffgen.js file
 Make it point to regular openai chat completion endpoint or you can use the chat completion endpoint of my custom deployment
 
 ---
-# Evaluration
 
-• Does it work? 
-Yess, find the demo video here: https://drive.google.com/file/d/1eq-YNG4Od5FDuvDftevtxvWLOX2tKQaV/view?usp=sharing
-
-• Is there evidence of user-centered product design choices?
-Earlier I thought to use an optimized Next JS build for both frotnend and backend, reading the problem statement again from the lense of the end customer, even know developers prefer
-
-
-• Is it pretty (simple and minimal can be beautiful)?
-• How is the UX from the developer's perspective? How easy is it now for them to write a changelog?
-
-
-
+## Quick start on a new macOS machine
 
 1)  Clone this repo and set up the CLI (global link):
 ```bash
