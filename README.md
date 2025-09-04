@@ -1,13 +1,13 @@
 # Diffgen CLI
 
-Interactive CLI that generates a clean, Markdown changelog from your Git history using Azure OpenAI, then serves it beautifully with Docsify on port 3000.
+Interactive CLI that generates a clean, Markdown changelog from your Git history using OpenAI, then serves it beautifully with Docsify on port 3000.
 
 ## Features
 - **Interactive prompts** to choose one of:
   - Generate changelog between different versions (Git tags)
   - Generate changelog between different commits
   - Generate changelog between a time interval (natural language supported, not working completely, just found a bug in this)
-- **Azure OpenAI** call guided by a strict base prompt
+- **OpenAI** call guided by a strict base prompt
 - Saves output to `CHANGELOG.generated.md` at the repo root
 - **Docsify** site auto-generated and served at `http://localhost:3000`
 
@@ -15,22 +15,23 @@ Interactive CLI that generates a clean, Markdown changelog from your Git history
 ### Warning! Before running the code, please see the endpoint link in the diffgen.js file
 Make it point to regular openai chat completion endpoint or you can use the chat completion endpoint of my custom deployment
 
-1) Install Homebrew (if not already):
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+---
+# Evaluration
 
-2) Install Git and Node (use nvm for Node 18+):
-```bash
-brew install git
-brew install nvm
-mkdir -p ~/.nvm && echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc && echo '[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"' >> ~/.zshrc && source ~/.zshrc
-nvm install 18
-nvm use 18
-node -v && npm -v
-```
+• Does it work? 
+Yess, find the demo video here: https://drive.google.com/file/d/1eq-YNG4Od5FDuvDftevtxvWLOX2tKQaV/view?usp=sharing
 
-3) Clone this repo and set up the CLI (global link):
+• Is there evidence of user-centered product design choices?
+Earlier I thought to use an optimized Next JS build for both frotnend and backend, reading the problem statement again from the lense of the end customer, even know developers prefer
+
+
+• Is it pretty (simple and minimal can be beautiful)?
+• How is the UX from the developer's perspective? How easy is it now for them to write a changelog?
+
+
+
+
+1)  Clone this repo and set up the CLI (global link):
 ```bash
 cd /Users/$(whoami)/Desktop
 git clone https://github.com/whynesspower/diffgen.git
@@ -40,7 +41,7 @@ npm link
 ```
 This exposes a global command named `diffgen` on your machine.
 
-4) Configure your API key (Azure OpenAI):
+2) Configure your API key: OpenAI (Optional) 
 ```bash
 export OPENAI_API_KEY="<your-openai-api-key>"
 ```
@@ -49,7 +50,7 @@ export OPENAI_API_KEY="<your-openai-api-key>"
 
 ## Using the CLI from any Git repository
 
-1) Open any Git repository (not this CLI folder):
+1) Open any Git repository:
 ```bash
 cd /path/to/another-git-project
 ```
