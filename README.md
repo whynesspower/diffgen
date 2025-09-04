@@ -6,7 +6,7 @@ Interactive CLI that generates a clean, Markdown changelog from your Git history
 - **Interactive prompts** to choose one of:
   - Generate changelog between different versions (Git tags)
   - Generate changelog between different commits
-  - Generate changelog between a time interval (natural language supported)
+  - Generate changelog between a time interval (natural language supported, not working completely, just found a bug in this)
 - **Azure OpenAI** call guided by a strict base prompt
 - Saves output to `CHANGELOG.generated.md` at the repo root
 - **Docsify** site auto-generated and served at `http://localhost:3000`
