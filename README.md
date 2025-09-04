@@ -11,10 +11,10 @@ Yess, find the demo video here: https://drive.google.com/file/d/1eq-YNG4Od5FDuvD
 
 Earlier I thought to use an optimized Next JS build for both frotnend and backend, reading the problem statement again from the lense of the end user realised that I'm buidling for developers: some of which prefer even ordering coffee from the CLI. 
 
-Generation of the change log should be the easiest thing - just a command away. The same cammand also starts a server to serve docsify to display the change log. 
+Generation of the change log should be the easiest thing - just a command away. The same command  also starts a server to serve docsify to display the change log. 
 
 ## Is it pretty (simple and minimal can be beautiful)?
-Didn't revent the wheel for frontend. Used the most standard open source solution to ease my own work. 
+Didn't reinvent the wheel for frontend. Used the most standard open source solution to ease my own work. 
 
 ## How is the UX from the developer's perspective? How easy is it now for them to write a changelog
 
